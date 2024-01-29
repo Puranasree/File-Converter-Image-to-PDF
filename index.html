@@ -49,7 +49,6 @@ input{
   background: #174353;
   border-radius: 5px;
 }
-
 button,.upload{
   width: 220px;
   margin: 50px 20px 10px 20px ;
@@ -64,7 +63,6 @@ button,.upload{
   border-radius: 5px;
   display: block;
 }
-
 .upload{
   background: #f40606;
 }
@@ -82,10 +80,6 @@ button,.upload{
   <button onClick="pdfDown()">Download as PDF</button>
 </div>
 </div>
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
 <script>
 var newImage, showImg;
@@ -100,7 +94,6 @@ showImg.onload = function() {
   URL.revokeObjectURL(showImg.src) // free memory
 }
 };
-
 function pdfDown(){
 console.log(newImage)
 var doc = new jsPDF();
